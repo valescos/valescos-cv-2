@@ -1,20 +1,19 @@
-import { useTailwindConst } from "./hooks/useTailwindConstants";
-import { cn } from "./utilities/cn";
+import Experience from "./sections/Experience";
+import Footer from "./sections/Footer";
+import Header from "./sections/Header";
+import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 function App() {
-  const handleTogleDM = () => {
-    document.querySelector("html")?.classList.contains("dark")
-      ? document.querySelector("html")?.classList.remove("dark")
-      : document.querySelector("html")?.classList.add("dark");
-  };
-
-  const { RESPONSIVE_WRAPPER } = useTailwindConst();
-
   return (
-    <div className="flex flex-col items-center">
-      <section className={cn(RESPONSIVE_WRAPPER)}>
-        <button onClick={handleTogleDM}>Toggle DarkMode</button>
-      </section>
+    <div className="flex flex-col items-center gap-16">
+      <Header />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Footer />
     </div>
   );
 }
