@@ -1,2 +1,9 @@
-# valescos-cv-2
- cv[1]
+# Мое резюме
+
+### _Версия 2_
+
+#### Технологии:
+
+- React
+- TailwindCSS
+- Vite
