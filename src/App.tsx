@@ -1,4 +1,4 @@
-import Experience from "./sections/Experience";
+// import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <Skills />
       <Projects />
-      <Experience />
+      {/* <Experience /> */}
       <Footer />
     </div>
   );
