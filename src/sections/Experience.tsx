@@ -1,4 +1,4 @@
-import { useTailwindConst } from "../hooks/useTailwindConstants";
+import { useTailwindConst } from "../hooks/useTailwindConst";
 import { cn } from "../utilities/cn";
 
 export default function Experience() {
