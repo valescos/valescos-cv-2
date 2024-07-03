@@ -3,6 +3,7 @@ import { cn } from "../utilities/cn";
 
 //temp imports
 import avatar from "../assets/img/avatar_sm.png";
+import ContactMe from "../components/ContactMe";
 
 export default function Hero() {
   const { RESPONSIVE_WRAPPER } = useTailwindConst();
@@ -21,18 +22,12 @@ export default function Hero() {
           className="dark:saturate-[0.65]"
         />
       </div>
-      <div>
-        <h1>Валентин Косарев</h1>
-        <p>Фронтенд-разработчик</p>
-        <p>
-          <a href="https://github.com/valescos">valescos</a>
-        </p>
-        <p>
-          <a href="mailto:valescos1986@gmail.com">valescos1986@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://t.me/Valescos">t.me/Valescos</a>
-        </p>
+      <div className="flex flex-col gap-4">
+        <div>
+          <h1>Валентин Косарев</h1>
+          <p>Фронтенд-разработчик</p>
+        </div>
+        <ContactMe variant="col" />
       </div>
     </section>
   );

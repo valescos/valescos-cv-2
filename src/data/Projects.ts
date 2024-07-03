@@ -81,16 +81,19 @@ export const PROJECTS = [
   },
   {
     id: 8,
-    reporef: "https://github.com/valescos/vsk-planner-serv",
-    href: "",
-    img: "",
-    stack: ["Node.js", "Express", "SQL", "PostgreSQL", "JavaScript"],
-  },
-  {
-    id: 9,
     reporef: "https://github.com/valescos/vsk-planner-cl",
     href: "https://vsk-planner-cl.onrender.com/",
     img: "",
-    stack: ["Node.js", "Express", "SQL", "PostgreSQL", "JavaScript"],
+    stack: [
+      "React",
+      "TanStack Query",
+      "React Hook Form",
+      "Zustand",
+      "Zod",
+      "React",
+      "TailwindCSS",
+      "Vite",
+      "TypeScript",
+    ],
   },
 ];
