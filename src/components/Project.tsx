@@ -10,7 +10,7 @@ export default function Project({
   stack,
 }: ProjectProps) {
   return (
-    <div className="basis-[30%] border-2 border-slate-900 dark:border-white">
+    <div className="basis-[80%] border-2 border-slate-900 sm:basis-[40%] lg:basis-[30%] dark:border-white">
       {id}
       <ul>
         {stack.map((item, index) => (
