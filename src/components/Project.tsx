@@ -1,6 +1,12 @@
-import type { TProjectType } from "../data/Projects";
+import { Technology } from "../types";
 
-type ProjectProps = TProjectType;
+type ProjectProps = {
+  id: string;
+  reporef: string;
+  href: string;
+  img: string;
+  stack: Technology[];
+};
 
 export default function Project({
   id,
@@ -10,7 +16,7 @@ export default function Project({
   stack,
 }: ProjectProps) {
   return (
-    <div className="basis-[80%] border-2 border-slate-900 sm:basis-[40%] lg:basis-[30%] dark:border-white">
+    <div className="basis-[80%] border-2 border-slate-900 sm:basis-[34%] lg:basis-[22%] dark:border-white">
       {id}
       <ul>
         {stack.map((item, index) => (

@@ -8,12 +8,9 @@ export default function Projects() {
 
   return (
     <section
-      className={cn(
-        "flex flex-wrap justify-center gap-x-4 gap-y-8 py-4",
-        RESPONSIVE_WRAPPER,
-      )}
+      className={cn("flex flex-wrap justify-center gap-8", RESPONSIVE_WRAPPER)}
     >
-      {PROJECTS.sort((a, b) => b.id - a.id).map((project) => (
+      {PROJECTS.sort((a, b) => Number(b.id) - Number(a.id)).map((project) => (
         <Project key={project.id} {...project} />
       ))}
     </section>
