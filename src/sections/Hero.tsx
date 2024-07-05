@@ -19,7 +19,7 @@ export default function Hero() {
         <img
           src={avatar}
           alt="Аватар автора сайта"
-          className="dark:saturate-[0.65]"
+          className="dark:saturate-[0.5]"
         />
       </div>
       <div className="flex flex-col gap-4">
