@@ -1,35 +1,37 @@
-export type TProjectType = {
-  id: number;
+import { Technology } from "../types";
+
+type ProjectT = {
+  id: string;
   reporef: string;
   href: string;
   img: string;
-  stack: string[];
+  stack: Technology[];
 };
 
-export const PROJECTS = [
+export const PROJECTS: ProjectT[] = [
   {
-    id: 0,
+    id: "p001",
     reporef: "https://github.com/valescos/valescos.github.io",
     href: "https://valescos.github.io/",
     img: "",
-    stack: ["html", "css", "JavaScript"],
+    stack: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: 1,
+    id: "p002",
     reporef: "https://github.com/valescos/valescos-cv",
     href: "https://valescos-cv.netlify.app/",
     img: "",
-    stack: ["React", "TailwindCSS", "Vite", "html", "css", "JavaScript"],
+    stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
   },
   {
-    id: 2,
+    id: "p003",
     reporef: "https://github.com/valescos/test-task-1",
     href: "https://valescos-test-task-1.netlify.app/",
     img: "",
-    stack: ["React", "TailwindCSS", "Vite", "html", "css", "JavaScript"],
+    stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
   },
   {
-    id: 3,
+    id: "p004",
     reporef: "https://github.com/valescos/test-task-2",
     href: "https://valescos-test-task-2.netlify.app/",
     img: "",
@@ -38,13 +40,13 @@ export const PROJECTS = [
       "Pinia",
       "TailwindCSS",
       "Vite",
-      "html",
-      "css",
+      "HTML",
+      "CSS",
       "TypeScript",
     ],
   },
   {
-    id: 4,
+    id: "p005",
     reporef: "https://github.com/valescos/vsk-training-layout-1",
     href: "https://valescos-practice-1.netlify.app/",
     img: "",
@@ -53,44 +55,43 @@ export const PROJECTS = [
       "Pinia",
       "TailwindCSS",
       "Vite",
-      "html",
-      "css",
+      "HTML",
+      "CSS",
       "TypeScript",
     ],
   },
   {
-    id: 5,
+    id: "p006",
     reporef: "https://github.com/valescos/test-task-3",
     href: "https://valescos-test-task-3.netlify.app/",
     img: "",
-    stack: ["Vue.js", "TailwindCSS", "Vite", "html", "css", "JavaScript"],
+    stack: ["Vue.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
   },
   {
-    id: 6,
+    id: "p007",
     reporef: "https://github.com/valescos/vsk-training-layout-2",
     href: "https://valescos-practice-2.netlify.app/",
     img: "",
-    stack: ["React", "TailwindCSS", "Vite", "html", "css", "TypeScript"],
+    stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "TypeScript"],
   },
   {
-    id: 7,
+    id: "p008",
     reporef: "https://github.com/valescos/vsk-planner-serv",
     href: "",
     img: "",
     stack: ["Node.js", "Express", "SQL", "PostgreSQL", "JavaScript"],
   },
   {
-    id: 8,
+    id: "p009",
     reporef: "https://github.com/valescos/vsk-planner-cl",
     href: "https://vsk-planner-cl.onrender.com/",
     img: "",
     stack: [
-      "React",
+      "React.js",
       "TanStack Query",
       "React Hook Form",
       "Zustand",
       "Zod",
-      "React",
       "TailwindCSS",
       "Vite",
       "TypeScript",

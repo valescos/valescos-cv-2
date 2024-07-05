@@ -1,0 +1,18 @@
+export type Technology =
+  | "HTML"
+  | "CSS"
+  | "JavaScript"
+  | "TypeScript"
+  | "TailwindCSS"
+  | "React.js"
+  | "Vue.js"
+  | "Pinia"
+  | "Zustand"
+  | "Zod"
+  | "SQL"
+  | "Node.js"
+  | "Express"
+  | "PostgreSQL"
+  | "Vite"
+  | "TanStack Query"
+  | "React Hook Form";
