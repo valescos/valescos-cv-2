@@ -88,7 +88,7 @@ export const PROJECTS: ProjectT[] = [
     reporef: "https://github.com/valescos/vsk-planner-serv",
     href: "",
     img: "",
-    stack: ["Node.js", "Express", "SQL", "PostgreSQL", "JavaScript"],
+    stack: ["Node.js", "Express", "PostgreSQL", "JavaScript"],
   },
   {
     id: "p009",
