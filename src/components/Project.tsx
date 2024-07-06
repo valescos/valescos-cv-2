@@ -16,9 +16,9 @@ export default function Project({
   stack,
 }: ProjectProps) {
   return (
-    <div className="basis-[80%] border-2 border-slate-900 sm:basis-[34%] lg:basis-[22%] dark:border-white">
-      {id}
-      <ul>
+    <div className="basis-[80%] overflow-hidden rounded-xl border-4 border-slate-900 bg-slate-700 sm:basis-[34%] lg:basis-[22%] dark:border-slate-500">
+      {img && <img src={img} />}
+      <ul className="p-2">
         {stack.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
