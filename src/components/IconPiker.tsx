@@ -83,6 +83,7 @@ export default function IconPiker({ name, isColored, size }: IconPickerProps) {
       height={size}
       width={size}
       xmlns="http://www.w3.org/2000/svg"
+      className="transition-all hover:scale-[125%]"
     >
       {icon}
     </svg>
