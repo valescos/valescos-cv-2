@@ -1,13 +1,17 @@
+import { Technology } from "../types";
+import IconPiker from "./IconPiker";
+
 type TechnologyProps = {
   id: string;
-  name: string;
+  name: Technology;
   icon: string;
 };
 
-export default function Skill({ name, icon }: TechnologyProps) {
+export default function Skill({ name }: TechnologyProps) {
   return (
     <div className="flex flex-col items-center gap-2">
-      <img src={icon} alt={name} className="h-24" />
+      <IconPiker name={name} isColored={true} size={36} />
+
       <p>{name}</p>
     </div>
   );

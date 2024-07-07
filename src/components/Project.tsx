@@ -1,6 +1,7 @@
 import { Technology } from "../types";
 import { TECHNOLOGIES } from "../data/Technologies";
 import LazyImg from "./LazyImg";
+import IconPiker from "./IconPiker";
 
 type ProjectProps = {
   id: string;
@@ -35,13 +36,11 @@ export default function Project({
             ),
           )
           .map((item, index) => (
-            <li key={index} className="fill-white stroke-white text-white">
-              <img
-                title={item}
-                src={TECHNOLOGIES.find((tech) => tech.name === item)?.bwicon}
-                alt=""
-                className="size-6 fill-current"
-              />
+            <li
+              key={index}
+              className="fill-slate-900 stroke-none text-white dark:fill-white"
+            >
+              <IconPiker name={item} isColored={false} size={24} />
             </li>
           ))}
       </ul>
