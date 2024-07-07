@@ -7,7 +7,7 @@ import Skills from "./sections/Skills";
 
 function App() {
   return (
-    <div className="font-body flex flex-col items-center gap-16">
+    <div className="flex flex-col items-center gap-16 font-body">
       <Header />
       <Hero />
       <Skills />

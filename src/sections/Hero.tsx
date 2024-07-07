@@ -15,7 +15,7 @@ export default function Hero() {
         RESPONSIVE_WRAPPER,
       )}
     >
-      <div className="overflow-hidden rounded-3xl bg-[url('./assets/img/day-theme-bg.jpg')] bg-cover transition-all dark:bg-[url('./assets/img/nigth-theme-bg.jpg')]">
+      <div className="overflow-hidden rounded-3xl bg-[url('/src/assets/img/day-theme-bg.jpg')] bg-cover transition-all dark:bg-[url('/src/assets/img/nigth-theme-bg.jpg')]">
         <img
           src={avatar}
           alt="Аватар автора сайта"
