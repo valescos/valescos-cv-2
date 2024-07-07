@@ -16,7 +16,7 @@ export default function IconPiker({ name, isColored, size }: IconPickerProps) {
       break;
     case "Express":
       icon = express;
-      fill = "#000000";
+      fill = "#5FA04E";
       break;
     case "HTML":
       icon = html;
