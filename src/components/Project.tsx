@@ -21,7 +21,7 @@ export default function Project({
   stack,
 }: ProjectProps) {
   return (
-    <div className="flex basis-[80%] flex-col items-center sm:basis-[40%] lg:basis-[30%]">
+    <div className="flex basis-[80%] flex-col items-center transition-all hover:scale-[105%] sm:basis-[40%] lg:basis-[30%]">
       <div className="overflow-hidden rounded-xl border-2 border-slate-900 dark:border-slate-500">
         <LazyImg src={img} bg={bg} />
       </div>

@@ -100,7 +100,7 @@ export const PROJECTS: ProjectT[] = [
     href: "https://valescos-practice-2.netlify.app/",
     img: l03,
     bg: l03small,
-    stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "TypeScript"],
+    stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS"],
   },
   {
     id: "p008",
