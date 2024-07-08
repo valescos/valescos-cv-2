@@ -2,6 +2,7 @@ import { useTailwindConst } from "../hooks/useTailwindConst";
 import { cn } from "../utilities/cn";
 import avatar from "../assets/img/avatar_sm.png";
 import ContactMe from "../components/ContactMe";
+import StyledHeader from "../components/StyledHeader";
 
 export default function Hero() {
   const { RESPONSIVE_WRAPPER, THEME_BORDER } = useTailwindConst();
@@ -26,10 +27,13 @@ export default function Hero() {
         />
       </div>
       <ContactMe />
-      <h2 className="text-3xl">
+      <h2 className="text-center font-main text-3xl tracking-wider">
         Здравствуйте, меня зовут <strong>Валентин</strong> и вы на
         страничке-резюме, документирующей мой путь во фронтэнд разработке. 
       </h2>
+      <p className="text-center text-xl">
+        Ниже приведены примеры работ и информация о навыках :)
+      </p>
     </section>
   );
 }

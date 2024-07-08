@@ -41,10 +41,12 @@ export default function Skill({ name, isFav, icon }: SkillProps) {
       </div>
       <p>{name}</p>
       {skillussage > divider ? (
-        <p className="-mt-2 font-main font-black uppercase">{divider}+</p>
+        <p className="-mt-2 text-lg uppercase">
+          <strong>{divider}</strong>+
+        </p>
       ) : (
-        <p className="-mt-2 font-main font-black uppercase">
-          {skillussage} / {divider}
+        <p className="-mt-2 text-lg uppercase">
+          {skillussage} / <strong>{divider}</strong>
         </p>
       )}
     </div>

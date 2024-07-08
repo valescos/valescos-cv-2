@@ -1,7 +1,7 @@
 export default function ContactMe() {
   return (
     <nav>
-      <ul className="flex justify-between gap-4">
+      <ul className="flex justify-between gap-6">
         <a
           href="https://github.com/valescos"
           className="flex gap-2 [&>svg]:transition-transform [&>svg]:hover:scale-[110%]"

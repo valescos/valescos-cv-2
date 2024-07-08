@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "flex items-center justify-between py-4",
+        "z-20 flex items-center justify-between py-4",
         RESPONSIVE_WRAPPER,
       )}
     >
