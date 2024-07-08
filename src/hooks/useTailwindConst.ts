@@ -12,5 +12,12 @@ export function useTailwindConst() {
     "dark:border-slate-400",
   ].join(" ");
 
-  return { RESPONSIVE_WRAPPER, THEME_BORDER };
+  const STYLED_HEADER = [
+    "text-center",
+    "font-main",
+    "text-3xl",
+    "tracking-wider",
+  ].join(" ");
+
+  return { RESPONSIVE_WRAPPER, THEME_BORDER, STYLED_HEADER };
 }

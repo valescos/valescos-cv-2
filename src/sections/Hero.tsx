@@ -2,10 +2,10 @@ import { useTailwindConst } from "../hooks/useTailwindConst";
 import { cn } from "../utilities/cn";
 import avatar from "../assets/img/avatar_sm.png";
 import ContactMe from "../components/ContactMe";
-import StyledHeader from "../components/StyledHeader";
 
 export default function Hero() {
-  const { RESPONSIVE_WRAPPER, THEME_BORDER } = useTailwindConst();
+  const { RESPONSIVE_WRAPPER, THEME_BORDER, STYLED_HEADER } =
+    useTailwindConst();
 
   return (
     <section
@@ -27,7 +27,7 @@ export default function Hero() {
         />
       </div>
       <ContactMe />
-      <h2 className="text-center font-main text-3xl tracking-wider">
+      <h2 className={cn(STYLED_HEADER)}>
         Здравствуйте, меня зовут <strong>Валентин</strong> и вы на
         страничке-резюме, документирующей мой путь во фронтэнд разработке. 
       </h2>

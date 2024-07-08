@@ -27,6 +27,7 @@ type ProjectT = {
   img: string;
   bg: string;
   stack: Technology[];
+  date: string;
 };
 
 export const PROJECTS: ProjectT[] = [
@@ -37,6 +38,7 @@ export const PROJECTS: ProjectT[] = [
     img: l01,
     bg: l01small,
     stack: ["HTML", "CSS", "JavaScript"],
+    date: "11-31-2023",
   },
   {
     id: "p002",
@@ -45,6 +47,7 @@ export const PROJECTS: ProjectT[] = [
     img: cv01,
     bg: cv01small,
     stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
+    date: "05-06-2024",
   },
   {
     id: "p003",
@@ -53,6 +56,7 @@ export const PROJECTS: ProjectT[] = [
     img: t01,
     bg: t01small,
     stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
+    date: "04-28-2024",
   },
   {
     id: "p004",
@@ -70,6 +74,7 @@ export const PROJECTS: ProjectT[] = [
       "TypeScript",
       "JavaScript",
     ],
+    date: "05-03-2024",
   },
   {
     id: "p005",
@@ -87,6 +92,7 @@ export const PROJECTS: ProjectT[] = [
       "TypeScript",
       "JavaScript",
     ],
+    date: "06-03-2024",
   },
   {
     id: "p006",
@@ -95,6 +101,7 @@ export const PROJECTS: ProjectT[] = [
     img: t03,
     bg: t03small,
     stack: ["Vue.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
+    date: "08-07-2024",
   },
   {
     id: "p007",
@@ -103,6 +110,7 @@ export const PROJECTS: ProjectT[] = [
     img: l03,
     bg: l03small,
     stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
+    date: "08-12-2024",
   },
   {
     id: "p008",
@@ -111,6 +119,7 @@ export const PROJECTS: ProjectT[] = [
     img: serv01,
     bg: serv01small,
     stack: ["Node.js", "Express", "PostgreSQL", "JavaScript"],
+    date: "08-22-2024",
   },
   {
     id: "p009",
@@ -131,5 +140,6 @@ export const PROJECTS: ProjectT[] = [
       "HTML",
       "CSS",
     ],
+    date: "08-23-2024",
   },
 ];
