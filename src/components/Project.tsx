@@ -24,8 +24,8 @@ export default function Project({
 
   return (
     <div className="flex basis-[80%] flex-col items-center transition-all hover:scale-[105%] sm:basis-[40%] lg:basis-[30%]">
-      <div className="relative overflow-hidden rounded-xl border-2 border-slate-900 dark:border-slate-500">
-        <div className="target absolute inset-0 flex items-center justify-center gap-4 bg-slate-500/75 opacity-0 transition-all focus-within:opacity-100 hover:opacity-100">
+      <div className="relative overflow-hidden rounded-xl border-4 border-stone-300 dark:border-slate-300">
+        <div className="absolute inset-0 flex items-center justify-center gap-4 bg-stone-300/75 opacity-0 transition-all focus-within:opacity-100 hover:opacity-100 dark:bg-slate-300/75">
           {reporef && (
             <a href={reporef}>
               <div className="rounded-full bg-white p-2 transition-all hover:scale-[115%]">
@@ -61,7 +61,7 @@ export default function Project({
               {TECHNOLOGIES.find((tech) => tech.name === item)?.icon && (
                 <img
                   title={item}
-                  className="size-6"
+                  className="tranistion-all size-6 hover:scale-[125%]"
                   src={
                     dark
                       ? TECHNOLOGIES.find((tech) => tech.name === item)?.icon?.w

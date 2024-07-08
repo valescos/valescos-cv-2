@@ -25,7 +25,7 @@ export default function Hero() {
       </div>
       <div className="flex flex-col gap-4">
         <div>
-          <h1>Валентин Косарев</h1>
+          <h1 className="font-main text-2xl font-bold">Валентин Косарев</h1>
           <p>Фронтенд-разработчик</p>
         </div>
         <ContactMe variant="col" />

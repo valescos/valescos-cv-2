@@ -39,11 +39,11 @@ export default function Skill({ name, isFav, icon }: SkillProps) {
           <IconPiker name={name} isColored={true} size={isFav ? 64 : 36} />
         )}
       </div>
-      <p className="font-bold">{name}</p>
+      <p>{name}</p>
       {skillussage > divider ? (
-        <p>{divider}+</p>
+        <p className="-mt-2 font-main font-black uppercase">{divider}+</p>
       ) : (
-        <p>
+        <p className="-mt-2 font-main font-black uppercase">
           {skillussage} / {divider}
         </p>
       )}
