@@ -7,7 +7,12 @@ export default function Header() {
   const { RESPONSIVE_WRAPPER, THEME_BORDER } = useTailwindConst();
 
   return (
-    <header className={cn("flex justify-between py-4", RESPONSIVE_WRAPPER)}>
+    <header
+      className={cn(
+        "flex items-center justify-between py-4",
+        RESPONSIVE_WRAPPER,
+      )}
+    >
       <Button
         className={cn(
           "self-start rounded bg-gradient-to-tr from-[#fea845] to-[#bc7152] px-4 py-2 text-sm text-white data-[active]:opacity-80 data-[hover]:opacity-80 dark:from-[#015088] dark:to-[#01315f]",

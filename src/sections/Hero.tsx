@@ -1,6 +1,7 @@
 import { useTailwindConst } from "../hooks/useTailwindConst";
 import { cn } from "../utilities/cn";
 import avatar from "../assets/img/avatar_sm.png";
+import ContactMe from "../components/ContactMe";
 
 export default function Hero() {
   const { RESPONSIVE_WRAPPER, THEME_BORDER } = useTailwindConst();
@@ -8,7 +9,7 @@ export default function Hero() {
   return (
     <section
       className={cn(
-        "flex flex-col items-center gap-8 py-4",
+        "-mt-4 flex flex-col items-center gap-8 md:-mt-20",
         RESPONSIVE_WRAPPER,
       )}
     >
@@ -24,6 +25,7 @@ export default function Hero() {
           className="dark:saturate-[0.5]"
         />
       </div>
+      <ContactMe />
       <h2 className="text-3xl">
         Здравствуйте, меня зовут <strong>Валентин</strong> и вы на
         страничке-резюме, документирующей мой путь во фронтэнд разработке. 
