@@ -6,5 +6,11 @@ export function useTailwindConst() {
     "lg:w-[60%]",
   ].join(" ");
 
-  return { RESPONSIVE_WRAPPER };
+  const THEME_BORDER = [
+    "border-4",
+    "border-stone-200",
+    "dark:border-slate-400",
+  ].join(" ");
+
+  return { RESPONSIVE_WRAPPER, THEME_BORDER };
 }

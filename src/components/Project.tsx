@@ -3,6 +3,8 @@ import { TECHNOLOGIES } from "../data/Technologies";
 import LazyImg from "./LazyImg";
 import IconPiker from "./IconPiker";
 import { useThemeStore } from "../stores/themeStore";
+import { useTailwindConst } from "../hooks/useTailwindConst";
+import { cn } from "../utilities/cn";
 
 type ProjectProps = {
   id: string;
@@ -21,10 +23,11 @@ export default function Project({
   stack,
 }: ProjectProps) {
   const dark = useThemeStore((state) => state.dark);
+  const { THEME_BORDER } = useTailwindConst();
 
   return (
     <div className="flex basis-[80%] flex-col items-center transition-all hover:scale-[105%] sm:basis-[40%] lg:basis-[30%]">
-      <div className="relative overflow-hidden rounded-xl border-4 border-stone-300 dark:border-slate-300">
+      <div className={cn("relative overflow-hidden rounded-xl", THEME_BORDER)}>
         <div className="absolute inset-0 flex items-center justify-center gap-4 bg-stone-300/75 opacity-0 transition-all focus-within:opacity-100 hover:opacity-100 dark:bg-slate-300/75">
           {reporef && (
             <a href={reporef}>

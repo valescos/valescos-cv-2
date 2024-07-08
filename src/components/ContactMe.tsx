@@ -1,18 +1,7 @@
-import { cn } from "../utilities/cn";
-
-type ContactMeProps = {
-  variant: "col" | "row";
-};
-
-export default function ContactMe({ variant }: ContactMeProps) {
+export default function ContactMe() {
   return (
     <nav>
-      <ul
-        className={cn(
-          "flex gap-2",
-          variant === "col" ? "flex-col" : "justify-between",
-        )}
-      >
+      <ul className="flex justify-between gap-2">
         <a
           href="https://github.com/valescos"
           className="flex gap-2 [&>svg]:transition-transform [&>svg]:hover:scale-[110%]"

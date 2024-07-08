@@ -1,6 +1,3 @@
-// import Experience from "./sections/Experience";
-import CircleProgressBar from "./components/CircleProgressBar";
-import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -13,8 +10,6 @@ function App() {
       <Hero />
       <Skills />
       <Projects />
-      {/* <Experience /> */}
-      <Footer />
     </div>
   );
 }
