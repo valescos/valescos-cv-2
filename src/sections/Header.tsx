@@ -7,9 +7,8 @@ export default function Header() {
 
   return (
     <header className={cn("flex justify-between py-4", RESPONSIVE_WRAPPER)}>
-      <button>Скачать PDF</button>
       <ThemeToggle />
-      {/* <button onClick={handleTogleDM}>Toggle DarkMode</button> */}
+      <ThemeToggle />
     </header>
   );
 }

@@ -1,9 +1,10 @@
 import { useTailwindConst } from "../hooks/useTailwindConst";
 import { cn } from "../utilities/cn";
+import ContactMe from "../components/ContactMe";
+import { Button } from "@headlessui/react";
 
 //temp imports
 import avatar from "../assets/img/avatar_sm.png";
-import ContactMe from "../components/ContactMe";
 
 export default function Hero() {
   const { RESPONSIVE_WRAPPER } = useTailwindConst();
@@ -28,6 +29,9 @@ export default function Hero() {
           <p>Фронтенд-разработчик</p>
         </div>
         <ContactMe variant="col" />
+        <Button className="self-start rounded bg-gradient-to-tr from-[#fea845] to-[#bc7152] px-4 py-2 text-sm text-white data-[active]:opacity-90 data-[hover]:opacity-90 dark:from-[#015088] dark:to-[#01315f]">
+          PDF резюме
+        </Button>
       </div>
     </section>
   );

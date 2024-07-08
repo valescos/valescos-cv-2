@@ -1,4 +1,10 @@
-import zustand_icon from "../assets/icon/zustand_icon.png";
+import zustand from "../assets/icon/zustand.png";
+import zustand_w from "../assets/icon/zustand_w.png";
+import zustand_b from "../assets/icon/zustand_b.png";
+
+import pinia from "../assets/icon/pinia.png";
+import pinia_w from "../assets/icon/pinia_w.png";
+import pinia_b from "../assets/icon/pinia_b.png";
 
 import { Technology } from "../types";
 
@@ -6,8 +12,14 @@ type TechnologyT = {
   id: string;
   name: Technology;
   subtechto: Technology[] | null;
-  icon?: string;
+  icon?: PNGIcon;
   isFav: boolean;
+};
+
+export type PNGIcon = {
+  main: string;
+  b: string;
+  w: string;
 };
 
 export const TECHNOLOGIES: TechnologyT[] = [
@@ -57,13 +69,22 @@ export const TECHNOLOGIES: TechnologyT[] = [
     id: "t008",
     name: "Pinia",
     subtechto: null,
+    icon: {
+      main: pinia,
+      b: pinia_b,
+      w: pinia_w,
+    },
     isFav: false,
   },
   {
     id: "t009",
     name: "Zustand",
     subtechto: null,
-    icon: zustand_icon,
+    icon: {
+      main: zustand,
+      b: zustand_b,
+      w: zustand_w,
+    },
     isFav: false,
   },
   {

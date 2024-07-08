@@ -1,5 +1,5 @@
 // import Experience from "./sections/Experience";
-import IconPiker from "./components/IconPiker";
+import CircleProgressBar from "./components/CircleProgressBar";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";

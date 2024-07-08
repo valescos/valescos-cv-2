@@ -42,10 +42,6 @@ export default function IconPiker({ name, isColored, size }: IconPickerProps) {
       icon = reacthookform;
       fill = "#EC5990";
       break;
-    case "React Hook Form":
-      icon = reacthookform;
-      fill = "#EC5990";
-      break;
     case "TanStack Query":
       icon = reactquery;
       fill = "#FF4154";

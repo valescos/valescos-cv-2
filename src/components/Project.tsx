@@ -2,6 +2,7 @@ import { Technology } from "../types";
 import { TECHNOLOGIES } from "../data/Technologies";
 import LazyImg from "./LazyImg";
 import IconPiker from "./IconPiker";
+import { useThemeStore } from "../stores/themeStore";
 
 type ProjectProps = {
   id: string;
@@ -19,6 +20,8 @@ export default function Project({
   bg,
   stack,
 }: ProjectProps) {
+  const dark = useThemeStore((state) => state.dark);
+
   return (
     <div className="flex basis-[80%] flex-col items-center transition-all hover:scale-[105%] sm:basis-[40%] lg:basis-[30%]">
       <div className="relative overflow-hidden rounded-xl border-2 border-slate-900 dark:border-slate-500">
@@ -55,6 +58,17 @@ export default function Project({
               key={index}
               className="fill-slate-900 stroke-none text-white dark:fill-white"
             >
+              {TECHNOLOGIES.find((tech) => tech.name === item)?.icon && (
+                <img
+                  title={item}
+                  className="size-6"
+                  src={
+                    dark
+                      ? TECHNOLOGIES.find((tech) => tech.name === item)?.icon?.w
+                      : TECHNOLOGIES.find((tech) => tech.name === item)?.icon?.b
+                  }
+                />
+              )}
               <IconPiker name={item} isColored={false} size={24} />
             </li>
           ))}
