@@ -1,6 +1,6 @@
 import { useTailwindConst } from "../hooks/useTailwindConst";
-import { cn } from "../utilities/cn";
 import { TECHNOLOGIES } from "../data/Technologies";
+import { cn } from "../utilities/cn";
 import Skill from "../components/Skill";
 
 export default function Skills() {
