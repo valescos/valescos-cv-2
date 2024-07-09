@@ -12,12 +12,7 @@ export function useTailwindConst() {
     "dark:border-slate-300",
   ].join(" ");
 
-  const STYLED_HEADER = [
-    "text-center",
-    "font-main",
-    "text-2xl",
-    "tracking-wider",
-  ].join(" ");
+  const STYLED_HEADER = ["text-center", "text-2xl"].join(" ");
 
   return { RESPONSIVE_WRAPPER, THEME_BORDER, STYLED_HEADER };
 }

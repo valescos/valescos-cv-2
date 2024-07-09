@@ -11,13 +11,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
-    "@hookform/resolvers": "^3.9.0",
     "clsx": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.52.1",
     "tailwind-merge": "^2.3.0",
-    "zod": "^3.23.8",
     "zustand": "^4.5.4"
   },
   "devDependencies": {
