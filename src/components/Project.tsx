@@ -46,7 +46,7 @@ export default function Project({
         </div>
         <LazyImg src={img} bg={bg} />
       </div>
-      <ul className="flex flex-wrap gap-2 p-2">
+      <ul className="flex flex-wrap justify-center gap-2 p-2">
         {stack
           .filter((item) =>
             stack.every(
@@ -64,7 +64,7 @@ export default function Project({
               {TECHNOLOGIES.find((tech) => tech.name === item)?.icon && (
                 <img
                   title={item}
-                  className="tranistion-all size-6 hover:scale-[125%]"
+                  className="tranistion-all -mb-6 size-6 hover:scale-[125%]"
                   src={
                     dark
                       ? TECHNOLOGIES.find((tech) => tech.name === item)?.icon?.w

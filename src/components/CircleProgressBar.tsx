@@ -26,13 +26,6 @@ export default function CircleProgressBar({
       viewBox={`0 0 ${circleWidth} ${circleWidth}`}
       className="rotate-90"
     >
-      {/* <defs>
-        <linearGradient id="gradient">
-          <stop offset="5%" stopColor={dark ? "#01315f" : "#c06d4f"} />
-          <stop offset="50%" stopColor={dark ? "#015088" : "#fea845"} />
-          <stop offset="90%" stopColor={dark ? "#031e33" : "#bc7152"} />
-        </linearGradient>
-      </defs> */}
       <circle
         cx={circleWidth / 2}
         cy={circleWidth / 2}
