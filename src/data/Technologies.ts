@@ -14,6 +14,7 @@ type TechnologyT = {
   subtechto: Technology[] | null;
   icon?: PNGIcon;
   isFav: boolean;
+  brandColor: string;
 };
 
 export type PNGIcon = {
@@ -28,42 +29,49 @@ export const TECHNOLOGIES: TechnologyT[] = [
     name: "React.js",
     subtechto: null,
     isFav: true,
+    brandColor: "#61DAFB",
   },
   {
     id: "t002",
     name: "TypeScript",
     subtechto: null,
     isFav: true,
+    brandColor: "#3178C6",
   },
   {
     id: "t003",
     name: "TailwindCSS",
     subtechto: null,
     isFav: true,
+    brandColor: "#06B6D4",
   },
   {
     id: "t004",
     name: "JavaScript",
     subtechto: ["React.js", "Vue.js", "TypeScript", "Node.js"],
     isFav: false,
+    brandColor: "#F7DF1E",
   },
   {
     id: "t005",
     name: "HTML",
     subtechto: ["React.js", "Vue.js", "TypeScript", "JavaScript"],
     isFav: false,
+    brandColor: "#E34F26",
   },
   {
     id: "t006",
     name: "CSS",
     subtechto: ["TailwindCSS"],
     isFav: false,
+    brandColor: "#06B6D4",
   },
   {
     id: "t007",
     name: "Vue.js",
     subtechto: null,
     isFav: false,
+    brandColor: "#4FC08D",
   },
   {
     id: "t008",
@@ -75,6 +83,7 @@ export const TECHNOLOGIES: TechnologyT[] = [
       w: pinia_w,
     },
     isFav: false,
+    brandColor: "#ffc93f",
   },
   {
     id: "t009",
@@ -86,47 +95,55 @@ export const TECHNOLOGIES: TechnologyT[] = [
       w: zustand_w,
     },
     isFav: false,
+    brandColor: "#f76f2e",
   },
   {
     id: "t010",
     name: "Zod",
     subtechto: null,
     isFav: false,
+    brandColor: "#3E67B1",
   },
   {
     id: "t011",
     name: "Node.js",
     subtechto: ["Express"],
     isFav: false,
+    brandColor: "#5FA04E",
   },
   {
     id: "t012",
     name: "Express",
     subtechto: null,
     isFav: false,
+    brandColor: "#5FA04E",
   },
   {
     id: "t013",
     name: "PostgreSQL",
     subtechto: null,
     isFav: false,
+    brandColor: "#4169E1",
   },
   {
     id: "t014",
     name: "Vite",
     subtechto: null,
     isFav: false,
+    brandColor: "#646CFF",
   },
   {
     id: "t015",
     name: "TanStack Query",
     subtechto: null,
     isFav: false,
+    brandColor: "#FF4154",
   },
   {
     id: "t016",
     name: "React Hook Form",
     subtechto: null,
     isFav: false,
+    brandColor: "#EC5990",
   },
 ];

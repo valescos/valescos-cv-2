@@ -10,9 +10,10 @@ type SkillProps = {
   name: Technology;
   icon?: PNGIcon;
   isFav: boolean;
+  brandColor: string;
 };
 
-export default function Skill({ name, isFav, icon }: SkillProps) {
+export default function Skill({ name, isFav, icon, brandColor }: SkillProps) {
   const divider = useLimitScore((state) => state.value);
 
   const skillussage = PROJECTS.reduce((acu, p) => {
@@ -26,6 +27,7 @@ export default function Skill({ name, isFav, icon }: SkillProps) {
         persentage={skillussage > divider ? 1 : skillussage / divider}
         circleWidth={isFav ? 200 : 120}
         radius={isFav ? 80 : 50}
+        brandColor={brandColor}
       />
       <div className={cn("absolute", icon ? "top-[18%]" : "top-[24.5%]")}>
         {icon ? (

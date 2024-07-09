@@ -7,7 +7,12 @@ export default function Skills() {
   const { RESPONSIVE_WRAPPER, STYLED_HEADER } = useTailwindConst();
 
   return (
-    <section className={cn("flex flex-col gap-4 py-4", RESPONSIVE_WRAPPER)}>
+    <section
+      className={cn(
+        "flex flex-col items-center gap-4 py-4",
+        RESPONSIVE_WRAPPER,
+      )}
+    >
       <h2 className={cn(STYLED_HEADER)}>Cфокусирован сейчас:</h2>
       <div className="flex flex-wrap justify-center gap-2 py-4">
         {TECHNOLOGIES.filter((tech) => tech.isFav).map((technology) => (
