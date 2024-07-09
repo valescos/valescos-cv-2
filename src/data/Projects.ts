@@ -8,6 +8,7 @@ import t01 from "../assets/img/t01.png";
 import t02 from "../assets/img/t02.png";
 import t03 from "../assets/img/t03.png";
 import cv01 from "../assets/img/cv01.png";
+import cv02 from "../assets/img/cv02.png";
 import serv01 from "../assets/img/serv01.png";
 
 import l01small from "../assets/img/l01small.png";
@@ -19,6 +20,7 @@ import t02small from "../assets/img/t02small.png";
 import t03small from "../assets/img/t03small.png";
 import cv01small from "../assets/img/cv01small.png";
 import serv01small from "../assets/img/serv01small.png";
+import cv02small from "../assets/img/cv02small.png";
 
 type ProjectT = {
   id: string;
@@ -101,7 +103,7 @@ export const PROJECTS: ProjectT[] = [
     img: t03,
     bg: t03small,
     stack: ["Vue.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
-    date: "08-07-2024",
+    date: "06-07-2024",
   },
   {
     id: "p007",
@@ -110,7 +112,7 @@ export const PROJECTS: ProjectT[] = [
     img: l03,
     bg: l03small,
     stack: ["React.js", "TailwindCSS", "Vite", "HTML", "CSS", "JavaScript"],
-    date: "08-12-2024",
+    date: "06-12-2024",
   },
   {
     id: "p008",
@@ -119,7 +121,7 @@ export const PROJECTS: ProjectT[] = [
     img: serv01,
     bg: serv01small,
     stack: ["Node.js", "Express", "PostgreSQL", "JavaScript"],
-    date: "08-22-2024",
+    date: "06-22-2024",
   },
   {
     id: "p009",
@@ -140,6 +142,25 @@ export const PROJECTS: ProjectT[] = [
       "HTML",
       "CSS",
     ],
-    date: "08-23-2024",
+    date: "06-23-2024",
+  },
+  {
+    id: "p010",
+    reporef: "https://github.com/valescos/valescos-cv-2",
+    href: "https://valescoscv.netlify.app/",
+    img: cv02,
+    bg: cv02small,
+    stack: [
+      "React.js",
+      "Zustand",
+      "TailwindCSS",
+      "Vite",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Headless UI",
+    ],
+    date: "07-09-2024",
   },
 ];

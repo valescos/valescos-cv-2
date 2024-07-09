@@ -15,4 +15,5 @@ export type Technology =
   | "PostgreSQL"
   | "Vite"
   | "TanStack Query"
-  | "React Hook Form";
+  | "React Hook Form"
+  | "Headless UI";

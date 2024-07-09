@@ -64,7 +64,7 @@ export const TECHNOLOGIES: TechnologyT[] = [
     name: "CSS",
     subtechto: ["TailwindCSS"],
     isFav: false,
-    brandColor: "#06B6D4",
+    brandColor: "#1572B6",
   },
   {
     id: "t007",
@@ -146,4 +146,13 @@ export const TECHNOLOGIES: TechnologyT[] = [
     isFav: false,
     brandColor: "#EC5990",
   },
+  {
+    id: "t017",
+    name: "Headless UI",
+    subtechto: null,
+    isFav: false,
+    brandColor: "#66E3FF",
+  },
 ];
+
+//
