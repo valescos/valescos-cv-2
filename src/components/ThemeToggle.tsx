@@ -29,8 +29,7 @@ export default function ThemeToggle() {
     >
       <span
         className={cn(
-          "size-8 translate-x-0 rounded-full bg-none transition group-data-[checked]:translate-x-16",
-          THEME_BORDER,
+          "size-8 translate-x-0 rounded-full border-4 border-white bg-none transition group-data-[checked]:translate-x-16",
         )}
       />
     </Switch>

@@ -17,7 +17,6 @@ export default function Hero() {
       <div
         className={cn(
           "size-64 overflow-hidden rounded-3xl bg-[url('/src/assets/img/day-theme-bg.jpg')] bg-cover transition-all dark:bg-[url('/src/assets/img/nigth-theme-bg.jpg')]",
-          THEME_BORDER,
         )}
       >
         <img

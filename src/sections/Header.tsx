@@ -4,7 +4,7 @@ import ThemeToggle from "../components/ThemeToggle";
 import { Button } from "@headlessui/react";
 
 export default function Header() {
-  const { RESPONSIVE_WRAPPER, THEME_BORDER } = useTailwindConst();
+  const { RESPONSIVE_WRAPPER } = useTailwindConst();
 
   return (
     <header
@@ -18,8 +18,7 @@ export default function Header() {
           console.log(new Date().toLocaleDateString());
         }}
         className={cn(
-          "self-start rounded-full bg-gradient-to-tr from-[#fea845] to-[#bc7152] px-4 py-2 text-sm text-white data-[active]:opacity-80 data-[hover]:opacity-80 dark:from-[#015088] dark:to-[#01315f]",
-          THEME_BORDER,
+          "self-start rounded-full bg-gradient-to-tr from-[#fea845] to-[#bc7152] px-4 py-2 text-sm text-white ring-white data-[active]:ring-4 data-[hover]:ring-4 dark:from-[#015088] dark:to-[#01315f]",
         )}
       >
         PDF резюме

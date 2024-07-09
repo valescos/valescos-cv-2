@@ -6,7 +6,7 @@ type LazyImgProps = {
 export default function LazyImg({ src, bg }: LazyImgProps) {
   return (
     <div
-      className="h-[220px] w-[320px] bg-cover"
+      className="max-h-[210px] max-w-[280px] bg-cover"
       style={{ backgroundImage: `url('${bg}')` }}
     >
       <img src={src} alt="" loading="lazy" />

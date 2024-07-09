@@ -8,7 +8,7 @@ export function useTailwindConst() {
 
   const THEME_BORDER = [
     "border-4",
-    "border-white",
+    "border-zinc-300",
     "dark:border-slate-300",
   ].join(" ");
 

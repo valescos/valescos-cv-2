@@ -44,7 +44,7 @@ export default function CircleProgressBar({
         r={radius}
         className={cn(
           "fill-none transition-all",
-          dark ? "stroke-slate-300" : "stroke-stone-300",
+          dark ? "stroke-slate-300" : "stroke-zinc-300",
         )}
       />
       <circle

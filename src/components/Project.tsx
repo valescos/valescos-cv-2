@@ -28,7 +28,7 @@ export default function Project({
   return (
     <div className="flex basis-[80%] flex-col items-center transition-all hover:scale-[105%] sm:basis-[40%] lg:basis-[30%]">
       <div className={cn("relative overflow-hidden rounded-xl", THEME_BORDER)}>
-        <div className="absolute inset-0 flex items-center justify-center gap-4 bg-stone-300/75 opacity-0 transition-all focus-within:opacity-100 hover:opacity-100 dark:bg-slate-300/75">
+        <div className="absolute inset-0 flex items-center justify-center gap-4 bg-zinc-300/75 opacity-0 transition-all focus-within:opacity-100 hover:opacity-100 dark:bg-slate-300/75">
           {reporef && (
             <a href={reporef}>
               <div className="rounded-full bg-white p-2 transition-all hover:scale-[115%]">

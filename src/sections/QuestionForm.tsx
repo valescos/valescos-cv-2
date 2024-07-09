@@ -7,7 +7,6 @@ import { limitSchema } from "../types";
 import type { TlimitSchema } from "../types";
 
 export default function QuestionForm() {
-  const value = useLimitScore((state) => state.value);
   const setValue = useLimitScore((state) => state.setValue);
 
   const {
@@ -15,7 +14,12 @@ export default function QuestionForm() {
     handleSubmit,
     getValues,
     formState: { errors },
-  } = useForm<TlimitSchema>({ resolver: zodResolver(limitSchema) });
+  } = useForm<TlimitSchema>({
+    resolver: zodResolver(limitSchema),
+    defaultValues: {
+      limit: 10,
+    },
+  });
 
   const { RESPONSIVE_WRAPPER } = useTailwindConst();
   const onSubmit = () => {
