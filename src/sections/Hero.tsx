@@ -4,8 +4,7 @@ import avatar from "../assets/img/avatar_sm.png";
 import ContactMe from "../components/ContactMe";
 
 export default function Hero() {
-  const { RESPONSIVE_WRAPPER, THEME_BORDER, STYLED_HEADER } =
-    useTailwindConst();
+  const { RESPONSIVE_WRAPPER, STYLED_HEADER } = useTailwindConst();
 
   return (
     <section

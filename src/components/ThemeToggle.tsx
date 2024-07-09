@@ -2,7 +2,6 @@ import { Switch } from "@headlessui/react";
 import { useThemeStore } from "../stores/themeStore";
 import type { ThemeState } from "../stores/themeStore";
 import { useEffect } from "react";
-import { useTailwindConst } from "../hooks/useTailwindConst";
 import { cn } from "../utilities/cn";
 
 export default function ThemeToggle() {
@@ -10,8 +9,6 @@ export default function ThemeToggle() {
     dark: state.dark,
     togleTheme: state.togleTheme,
   }));
-
-  const { THEME_BORDER } = useTailwindConst();
 
   useEffect(() => {
     if (dark) {
