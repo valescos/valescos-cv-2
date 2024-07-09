@@ -4,6 +4,7 @@ import IconPiker from "./IconPiker";
 import { PROJECTS } from "../data/Projects";
 import { PNGIcon } from "../data/Technologies";
 import { cn } from "../utilities/cn";
+import { useLimitScore } from "../stores/limitStore";
 
 type SkillProps = {
   name: Technology;
@@ -12,11 +13,12 @@ type SkillProps = {
 };
 
 export default function Skill({ name, isFav, icon }: SkillProps) {
+  const divider = useLimitScore((state) => state.value);
+
   const skillussage = PROJECTS.reduce((acu, p) => {
     if (p.stack.includes(name)) return acu + 1;
     else return acu;
   }, 0);
-  const divider = 10;
 
   return (
     <div className="relative flex flex-col items-center gap-2">
@@ -39,13 +41,13 @@ export default function Skill({ name, isFav, icon }: SkillProps) {
           <IconPiker name={name} isColored={true} size={isFav ? 64 : 36} />
         )}
       </div>
-      <p>{name}</p>
+      <p className="-mt-2">{name}</p>
       {skillussage > divider ? (
-        <p className="-mt-2 text-lg uppercase">
+        <p className="-mt-2 text-lg">
           <strong>{divider}</strong>+
         </p>
       ) : (
-        <p className="-mt-2 text-lg uppercase">
+        <p className="-mt-2 text-lg">
           {skillussage} / <strong>{divider}</strong>
         </p>
       )}

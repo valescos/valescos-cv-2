@@ -7,14 +7,16 @@ export default function ContactMe() {
           className="flex gap-2 [&>svg]:transition-transform [&>svg]:hover:scale-[110%]"
         >
           {github_icon}
-          <span className="transition-transform hover:underline">valescos</span>
+          <span className="hidden transition-transform hover:underline md:block">
+            valescos
+          </span>
         </a>
         <a
           href="mailto:valescos1986@gmail.com"
           className="flex gap-2 [&>svg]:transition-transform [&>svg]:hover:scale-[110%]"
         >
           {email_icon}
-          <span className="transition-transform hover:underline">
+          <span className="hidden transition-transform hover:underline md:block">
             valescos1986@gmail.com
           </span>
         </a>
@@ -23,7 +25,7 @@ export default function ContactMe() {
           className="flex gap-2 [&>svg]:transition-transform [&>svg]:hover:scale-[110%]"
         >
           {telegramm_icon}
-          <span className="transition-transform hover:underline">
+          <span className="hidden transition-transform hover:underline md:block">
             t.me/Valescos
           </span>
         </a>

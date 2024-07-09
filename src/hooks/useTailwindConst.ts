@@ -8,14 +8,14 @@ export function useTailwindConst() {
 
   const THEME_BORDER = [
     "border-4",
-    "border-stone-200",
-    "dark:border-slate-400",
+    "border-white",
+    "dark:border-slate-300",
   ].join(" ");
 
   const STYLED_HEADER = [
     "text-center",
     "font-main",
-    "text-3xl",
+    "text-2xl",
     "tracking-wider",
   ].join(" ");
 

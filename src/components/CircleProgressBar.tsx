@@ -34,10 +34,16 @@ export default function CircleProgressBar({
       <circle
         cx={circleWidth / 2}
         cy={circleWidth / 2}
+        r={radius}
+        className={cn("overflow-hidden", dark ? "fill-none" : "fill-white")}
+      />
+      <circle
+        cx={circleWidth / 2}
+        cy={circleWidth / 2}
         strokeWidth="6px"
         r={radius}
         className={cn(
-          "fill-none",
+          "fill-none transition-all",
           dark ? "stroke-slate-300" : "stroke-stone-300",
         )}
       />
@@ -47,7 +53,7 @@ export default function CircleProgressBar({
         strokeWidth="9px"
         r={radius}
         stroke="url(#gradient)"
-        className="fill-none"
+        className="fill-none transition-all"
         style={{
           strokeDasharray: dashArray,
           strokeDashoffset: dashOffset,

@@ -9,13 +9,13 @@ export default function Skills() {
   return (
     <section className={cn("flex flex-col gap-4 py-4", RESPONSIVE_WRAPPER)}>
       <h2 className={cn(STYLED_HEADER)}>Cфокусирован сейчас:</h2>
-      <div className="flex flex-wrap justify-center gap-8 py-4">
+      <div className="flex flex-wrap justify-center gap-2 py-4">
         {TECHNOLOGIES.filter((tech) => tech.isFav).map((technology) => (
           <Skill key={technology.id} {...technology} isFav={true} />
         ))}
       </div>
       <h2 className={cn(STYLED_HEADER)}>Также знаком:</h2>
-      <div className="flex flex-wrap justify-center gap-4 py-4">
+      <div className="flex flex-wrap justify-center gap-2 py-4">
         {TECHNOLOGIES.filter((tech) => !tech.isFav).map((technology) => (
           <Skill key={technology.id} {...technology} isFav={false} />
         ))}
