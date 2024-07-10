@@ -13,16 +13,16 @@ export default function Header() {
         RESPONSIVE_WRAPPER,
       )}
     >
-      <Button
-        onClick={() => {
-          console.log(new Date().toLocaleDateString());
-        }}
-        className={cn(
-          "self-start rounded-full bg-gradient-to-tr from-[#fea845] to-[#bc7152] px-4 py-2 text-sm text-white ring-white data-[active]:ring-4 data-[hover]:ring-4 dark:from-[#015088] dark:to-[#01315f]",
-        )}
-      >
-        PDF резюме
-      </Button>
+      <a href="https://drive.google.com/file/d/1pOFLgJd_jhoBY-7wOXHXeO62iiCQc7yR/view?usp=sharing">
+        <Button
+          className={cn(
+            "self-start rounded-full bg-gradient-to-tr from-[#fea845] to-[#bc7152] px-4 py-2 text-sm text-white ring-white data-[active]:ring-4 data-[hover]:ring-4 dark:from-[#015088] dark:to-[#01315f]",
+          )}
+        >
+          PDF резюме
+        </Button>
+      </a>
+
       <ThemeToggle />
     </header>
   );
