@@ -74,6 +74,13 @@ export const TECHNOLOGIES: TechnologyT[] = [
     brandColor: "#4FC08D",
   },
   {
+    id: "t018",
+    name: "Redux",
+    subtechto: null,
+    isFav: false,
+    brandColor: "#764ABC",
+  },
+  {
     id: "t008",
     name: "Pinia",
     subtechto: null,
@@ -154,5 +161,3 @@ export const TECHNOLOGIES: TechnologyT[] = [
     brandColor: "#66E3FF",
   },
 ];
-
-//

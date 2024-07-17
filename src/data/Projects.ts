@@ -7,6 +7,8 @@ import l04 from "../assets/img/l04.png";
 import t01 from "../assets/img/t01.png";
 import t02 from "../assets/img/t02.png";
 import t03 from "../assets/img/t03.png";
+import t04 from "../assets/img/t04.png";
+import t05 from "../assets/img/t05.png";
 import cv01 from "../assets/img/cv01.png";
 import cv02 from "../assets/img/cv02.png";
 import serv01 from "../assets/img/serv01.png";
@@ -18,6 +20,8 @@ import l04small from "../assets/img/l04small.png";
 import t01small from "../assets/img/t01small.png";
 import t02small from "../assets/img/t02small.png";
 import t03small from "../assets/img/t03small.png";
+import t04small from "../assets/img/t04small.png";
+import t05small from "../assets/img/t05small.png";
 import cv01small from "../assets/img/cv01small.png";
 import serv01small from "../assets/img/serv01small.png";
 import cv02small from "../assets/img/cv02small.png";
@@ -162,5 +166,42 @@ export const PROJECTS: ProjectT[] = [
       "Headless UI",
     ],
     date: "07-09-2024",
+  },
+  {
+    id: "p011",
+    reporef: "https://github.com/valescos/test-task-4",
+    href: "https://valescos-test-task-4.netlify.app/",
+    img: t04,
+    bg: t04small,
+    stack: [
+      "Vue.js",
+      "Pinia",
+      "TailwindCSS",
+      "Vite",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Zod",
+    ],
+    date: "07-15-2024",
+  },
+  {
+    id: "p012",
+    reporef: "https://github.com/valescos/test-task-5",
+    href: "https://valescos-test-task-5.netlify.app/",
+    img: t05,
+    bg: t05small,
+    stack: [
+      "React.js",
+      "TailwindCSS",
+      "Vite",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Redux",
+    ],
+    date: "07-17-2024",
   },
 ];

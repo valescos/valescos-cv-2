@@ -16,4 +16,5 @@ export type Technology =
   | "Vite"
   | "TanStack Query"
   | "React Hook Form"
-  | "Headless UI";
+  | "Headless UI"
+  | "Redux";
